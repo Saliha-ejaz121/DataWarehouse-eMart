@@ -1,0 +1,21 @@
+USE [E-commerce]
+GO
+
+/****** Object:  Table [dbo].[Addresses]    Script Date: 12/14/2020 2:51:40 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Addresses](
+	[Address_Key] [varchar](50) NOT NULL,
+	[Address_Details] [varchar](max) NOT NULL,
+ CONSTRAINT [PK_Addresses] PRIMARY KEY CLUSTERED 
+(
+	[Address_Key] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+
